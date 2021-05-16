@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
 import TareasLista from './TareasLista'
 
 function App() {
+  const [ tareas, setTareas ] = useState ([ ])
   return (
     <>
     <TareasLista />
