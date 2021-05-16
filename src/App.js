@@ -5,7 +5,7 @@ function App() {
   const [ tareas, setTareas ] = useState ([ ])
   return (
     <>
-    <TareasLista />
+    <TareasLista tareas={tareas}/>
     <input type="text" />
     <button>Añadir Tarea</button>
     <button>Limpiar Tareas Completadas</button>

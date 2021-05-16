@@ -1,9 +1,10 @@
 import React from 'react'
+import Tarea from './Tarea'
 
-export default function TareasLista() {
+export default function TareasLista({ tareas }) {
     return (
-        <div>
-            Hello World
-        </div>
+        tareas.map(tarea => {
+            return <Tarea tarea={tarea} />
+        })
     )
 }
